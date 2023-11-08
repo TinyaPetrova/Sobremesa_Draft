@@ -1,4 +1,6 @@
-# <br>Sobremesa:<br/> JavaScript: React, TypeScript & Redux app
+# <br>Sobremesa:<br/>
+
+## JavaScript, React, TypeScript & Redux app
 
 This app is for those who are looking for ideas for spending time with friends. Sobremesa translates from Spanish as "time after the feast", when people after a meal want to talk, discuss news and just have a good time.
 
