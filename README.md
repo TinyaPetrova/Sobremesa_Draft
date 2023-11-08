@@ -1,27 +1,11 @@
-# vite-template-redux
+# <br>Sobremesa:<br/> JavaScript: React, TypeScript & Redux app
 
-Uses [Vite](https://vitejs.dev/), [Vitest](https://vitest.dev/), and [React Testing Library](https://github.com/testing-library/react-testing-library) to create a modern [React](https://react.dev/) app compatible with [Create React App](https://create-react-app.dev/)
+This app is for those who are looking for ideas for spending time with friends. Sobremesa translates from Spanish as "time after the feast", when people after a meal want to talk, discuss news and just have a good time.
 
-```sh
-npx degit reduxjs/redux-templates/packages/vite-template-redux my-app
-```
+## щThe service provides:
 
-## Goals
+- recipes using an open API (https://api-edamam-com.translate.goog/doc/open-api/recipe-search-v2.json?_x_tr_sl=auto&_x_tr_tl=ru&_x_tr_hl=ru);
+- games (a collection of links to choose from)
+- weather widget
 
-- Easy migration from Create React App or Vite
-- As beginner friendly as Create React App
-- Optimized performance compared to Create React App
-- Customizable without ejecting
-
-## Scripts
-
-- `dev`/`start` - start dev server and open browser
-- `build` - build for production
-- `preview` - locally preview production build
-- `test` - launch test runner
-
-## Inspiration
-
-- [Create React App](https://github.com/facebook/create-react-app/tree/main/packages/cra-template)
-- [Vite](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react)
-- [Vitest](https://github.com/vitest-dev/vitest/tree/main/examples/react-testing-lib)
+It is possible to enter a login and password to access all functions of the site
