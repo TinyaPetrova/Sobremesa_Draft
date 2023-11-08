@@ -1,4 +1,4 @@
-# <br>Sobremesa:<br/>
+# <br>Sobremesa<br/>
 
 ## JavaScript, React, TypeScript & Redux app
 
