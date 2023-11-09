@@ -21,6 +21,14 @@
         </nav>
       </header>
       <main>
+        <div class="weather-container">
+            <div class="recommendations">
+                <p class="weather-intro">
+                    <b>What's the weather like today?</b> <br><br>
+                    Our weather widget won't cheat: it will tell you exactly whether it makes sense to set the table outside or whether it's better to gather with friends for dinner at home, in front of a warm fireplace
+                </p>
+                <p id="weather-intro"></p>
+            </div>
             <div class="weather-card" id="weatherCard">
                 <p class="location" id="locationText">You're here now:</p>
                 <p class="city" id="city"></p>
@@ -30,12 +38,12 @@
                 </div><br>
                 <div id="loader" class="loader" style="display: none"></div>
                 <div class="temp">
-                    <img src="./content/default.png" alt="weather pic" class="weatherIcon" id="weatherIcon">
+                    <img src="/src/content/default.png" alt="weather pic" class="weatherIcon" id="weatherIcon">
                     <p class="temperature" id="temperature"></p>
                 </div><br>
                 <div class="wind-and-description">
                     <div class="wind" id="windElement" style="display: none">
-                        <img src="./content/wind.png" alt="wind" class="windImg">
+                        <img src="/src/content/wind.png" alt="wind" class="windImg">
                         <p class="windSpeed" id="windSpeed"></p>
                     </div>
                     <div class="description">
@@ -43,6 +51,7 @@
                     </div>
                 </div>
             </div>
+        </div>
             <img class="nyan" src="/src/img/nyan-weather.png" alt="hello">
             <div>
                 <p class="textbox-text">Alright, let's check it..</p>
@@ -53,6 +62,6 @@
       <footer>
           &copy; 2023 All rights are reserved
       </footer>
-    <script type="module" src="./src/weather.js"></script>
+    <script type="module" src="/src/weather.js"></script>
   </body>
 </html>

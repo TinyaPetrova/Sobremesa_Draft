@@ -51,6 +51,8 @@ async function getWeather() {
   weatherCard.style.display = "block";
   windElement.style.display = "block";
   loader.style.display = "none";
+
+  displayWeatherMessage(weatherCode);
 }
 
 function getWeatherDescription(weatherCode) {
@@ -120,34 +122,34 @@ function setWeatherIcon(weatherCode) {
   let iconPath = "";
   switch (weatherCode) {
     case 0:
-      iconPath = "./content/sun.png";
+      iconPath = "/src/content/sun.png";
       break;
     case 1:
     case 2:
     case 3:
-      iconPath = "./content/sun_with_cloud.png";
+      iconPath = "/src/content/sun_with_cloud.png";
       break;
     case 45:
     case 48:
-      iconPath = "./content/fog.png";
+      iconPath = "/src/content/fog.png";
       break;
     case 51:
     case 53:
     case 55:
-      iconPath = "./content/rain.png";
+      iconPath = "src/content/rain.png";
       break;
     case 71:
     case 73:
     case 75:
-      iconPath = "./content/snow.png";
+      iconPath = "src/content/snow.png";
       break;
     case 95:
     case 96:
     case 99:
-      iconPath = "./content/thunderstorm.png";
+      iconPath = "src/content/thunderstorm.png";
       break;
     default:
-      iconPath = "./content/default.png";
+      iconPath = "src/content/default.png";
   }
   document.getElementById("weatherIcon").src = iconPath;
 }
@@ -156,3 +158,15 @@ getWeather().catch((error) => {
   loader.style.display = "none";
   console.log("Something went wrong: ", error);
 });
+
+function displayWeatherMessage(weatherCode) {
+  const weatherIntro = document.getElementById("weather-intro");
+
+  if ([51, 53, 55, 71, 73, 75, 95, 96, 99].includes(weatherCode)) {
+    weatherIntro.textContent =
+      "You're lucky today! The weather now is perfect for outdoor dinner!";
+  } else {
+    weatherIntro.textContent =
+      "Oh no, the weather is not so cool now... Recommend you to chill at home!";
+  }
+}
