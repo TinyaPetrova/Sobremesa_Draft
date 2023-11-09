@@ -181,7 +181,7 @@ footer {
   bottom: 70px;
   right: 0;
   padding: 0px;
-  animation: appear 1s forwards;
+  animation: appear 2.3s forwards;
   height: auto;
   width: 250px;
 }
@@ -194,7 +194,7 @@ footer {
   width: 270px;
   z-index: 1;
   height: auto;
-  animation: appear 7s forwards;
+  animation: appear 3s forwards;
 }
 
 p.textbox-text {
@@ -202,7 +202,7 @@ p.textbox-text {
   bottom: 310px;
   right: 169px;
   padding: 0px;
-  animation: appear 7s forwards;
+  animation: appear 3s forwards;
   font-size: large;
   font-weight: 500;
   width: 250px;

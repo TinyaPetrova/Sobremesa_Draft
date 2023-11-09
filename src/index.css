@@ -41,7 +41,7 @@ h1 {
   padding: 10px;
   font-size: 60px;
   opacity: 0;
-  animation: appear 1s forwards;
+  animation: appear 2.3s forwards;
   width: 500px;
 }
 
@@ -76,10 +76,12 @@ h1 {
 
 .gif,
 .gif2,
-.gif3 {
+.gif3,
+.gif4 {
   margin-top: 0;
   padding: 0;
-  height: 89vh;
+  height: 80vh;
+  width: 100vh;
 }
 
 .nyan {
@@ -87,7 +89,7 @@ h1 {
   bottom: 70px;
   right: 0;
   padding: 0px;
-  animation: appear 1s forwards;
+  animation: appear 2.3s forwards;
   width: 250px;
 }
 
@@ -98,7 +100,7 @@ h1 {
   padding: 0px;
   width: 270px;
   z-index: 1;
-  animation: appear 7s forwards;
+  animation: appear 3s forwards;
 }
 
 p.textbox-text {
