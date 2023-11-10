@@ -1,6 +1,7 @@
 const loader = document.getElementById("loader");
 const weatherCard = document.getElementById("weatherCard");
 const windElement = document.getElementById("windElement");
+const media_images = document.querySelectorAll(".media-images");
 
 async function getWeather() {
   loader.style.display = "block";
@@ -164,9 +165,19 @@ function displayWeatherMessage(weatherCode) {
 
   if ([51, 53, 55, 71, 73, 75, 95, 96, 99].includes(weatherCode)) {
     weatherIntro.textContent =
-      "You're lucky today! The weather now is perfect for outdoor dinner!";
+      "Oh no, the weather is not so cool now... Recommend you to chill at home!";
   } else {
     weatherIntro.textContent =
-      "Oh no, the weather is not so cool now... Recommend you to chill at home!";
+      "You're lucky today! The weather now is perfect for outdoor dinner!";
   }
 }
+
+media_images.forEach((media_images) => {
+  media_images.addEventListener("mouseenter", function () {
+    media_images.style.cursor = "pointer";
+  });
+
+  media_images.addEventListener("mouseleave", function () {
+    media_images.style.cursor = "auto";
+  });
+});

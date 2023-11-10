@@ -78,7 +78,6 @@ body {
 
 img {
   height: 37px;
-  opacity: 60%;
 }
 
 h1 {
@@ -155,6 +154,7 @@ header {
   top: 0;
   left: 0;
   z-index: 100;
+  height: 5.5vh;
   width: 1260px;
 }
 
@@ -177,32 +177,60 @@ nav a {
   text-decoration: none;
   margin: 0px;
   flex: 1;
-  transition: color 0.3s;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav a:hover {
   color: #0cebff;
+  transform: scale(1.08);
 }
 
 footer {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   background-color: #461d41;
   color: blanchedalmond;
-  height: 3vh;
+  height: 5.5vh;
   margin: 0;
   padding: 20px;
   bottom: 0;
   position: fixed;
   left: 0;
-  width: 100%;
+  right: 0;
+  width: 96.9%;
+}
+
+.media {
+  display: flex;
+  align-items: center;
+}
+
+.media-img {
+  width: 50px;
+  height: 50px;
+  margin-left: 40px;
+  transition: transform 0.3s ease;
+}
+
+.media-images {
+  display: flex;
+  flex-direction: row;
+}
+
+.media-img:hover {
+  transform: scale(1.2);
+}
+
+.copyright {
+  margin-right: 130px;
+  margin-top: 40px;
 }
 
 .nyan {
   position: absolute;
   bottom: 70px;
-  right: 0;
+  right: 30px;
   padding: 0px;
   animation: appear 2.3s forwards;
   height: auto;
@@ -212,7 +240,7 @@ footer {
 .textbox {
   position: absolute;
   bottom: 180px;
-  right: 190px;
+  right: 210px;
   padding: 0px;
   width: 280px;
   z-index: 1;
@@ -223,7 +251,7 @@ footer {
 p.textbox-text {
   position: absolute;
   bottom: 315px;
-  right: 170px;
+  right: 192px;
   padding: 0px;
   animation: appear 3s forwards;
   font-size: large;
